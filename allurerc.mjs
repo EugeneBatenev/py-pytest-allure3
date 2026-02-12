@@ -46,13 +46,6 @@ export default defineConfig({
   output: "./allure-report",
   historyPath: "./history.jsonl",
   plugins: {
-    log: {
-      options: {
-        groupBy: ["feature"],
-        withTrace: false,
-        allSteps: false,
-      },
-    },
     testops: {
       options: {
         launchName: `Jenkins agent sends results using allure3 (${new Date().toISOString()})`,
