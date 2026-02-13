@@ -36,7 +36,7 @@ jobs:
           pip install allure-pytest pytest
       - name: install allure3
         run: |
-          npm install -g allure3
+          npm install -g allure
           npm init -y
           npm add -D allure
       - name: run pytest tests and upload to Allure TestOps
