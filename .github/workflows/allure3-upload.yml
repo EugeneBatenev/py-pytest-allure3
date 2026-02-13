@@ -47,3 +47,4 @@ jobs:
           ALLURE_TOKEN: ${{ secrets.ALLURE_TOKEN_TESTING }}
           ALLURE_PROJECT_ID: 276
           ALLURE_RESULTS: "allure-results"
+          ALLURE_LAUNCH_NAME: "GitHub Actions upload using allure3"

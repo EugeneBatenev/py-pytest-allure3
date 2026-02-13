@@ -7,9 +7,7 @@ export default defineConfig({
   historyPath: "./history.jsonl",
   plugins: {
     testops: {
-      options: {
-        launchName: `Jenkins agent sends results using allure3 (${new Date().toISOString()})`,
-      },
+      options: { },
     },
   },
   variables: { },
