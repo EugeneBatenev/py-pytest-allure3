@@ -9,7 +9,20 @@ on:
       ALLURE_USERNAME:
         description: "ALLURE_USERNAME service parameter. Leave blank"
         required: false
-
+      TESTS_TYPE:
+        description: "Select type of tests"
+        required: true
+        type: choice
+        options:
+          - unit-many
+          - unit
+          - attachments
+          - fixtures
+        default: unit-many
+      PYTEST_THREADS:
+        description: "How many threads, sire?"
+        required: true
+        default: 1
 env:
   ALLURE_RESULTS: "allure-results"
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
@@ -38,7 +51,7 @@ jobs:
           allure-project-id: 276
       - name: Run pytest tests
         run: |
-          allurectl watch -- pytest tests -n 3 --alluredir=${ALLURE_RESULTS}
+          allurectl watch -- pytest tests/${{ github.event.inputs.TESTS_TYPE }} -n ${{ github.event.inputs.PYTEST_THREADS }} --alluredir=${ALLURE_RESULTS}
         env:
           ALLURE_RESULTS: "allure-results"
           ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
