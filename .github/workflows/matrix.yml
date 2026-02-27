@@ -59,4 +59,5 @@ jobs:
           ALLURE_RESULTS: "allure-results"
           ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
           THREADS: ${{ matrix.THREADS }}
+          ALLURE_LAUNCH_TAGS: "${{ inputs.TESTS_TYPE }}"
   
