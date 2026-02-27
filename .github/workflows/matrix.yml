@@ -51,6 +51,9 @@ jobs:
           allure-project-id: 276
       - name: Run pytest tests
         run: |
+          if [ "${{ matrix.THREADS }}" = "TWO" ]; then
+            sleep 2
+          fi
           allurectl watch -- pytest tests/${{ inputs.TESTS_TYPE }} -n ${{ inputs.PYTEST_THREADS }} --alluredir=allure-results
         env:
           ALLURE_RESULTS: "allure-results"
