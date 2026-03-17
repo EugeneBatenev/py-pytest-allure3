@@ -16,10 +16,8 @@ def setup_teardown():
 @allure.story("many unit tests")
 @allure.title("Assert a tuple 001")
 def test_unit_always_passing_001():
-    with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
-    with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+    with allure.step("Assert 123 versus 223"):
+        assert (1, 2, 3) == (2, 2, 3)
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
