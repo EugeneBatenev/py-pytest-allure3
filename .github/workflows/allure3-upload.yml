@@ -8,11 +8,11 @@ on:
         required: true
         type: choice
         options:
-          - unit-many
           - unit
+          - unit-many
           - attachments
           - fixtures
-        default: unit-many
+        default: unit
       PYTEST_THREADS:
         description: "How many threads, sire?"
         required: true
