@@ -8,11 +8,12 @@ on:
         required: true
         type: choice
         options:
+          - poco
           - unit
           - unit-many
           - attachments
           - fixtures
-        default: unit
+        default: poco
       PYTEST_THREADS:
         description: "How many threads, sire?"
         required: true
