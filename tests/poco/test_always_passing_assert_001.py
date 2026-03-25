@@ -17,7 +17,7 @@ def setup_teardown():
 @allure.title("Assert a tuple 001 and it will fail")
 def test_unit_always_passing_001():
     with allure.step("Assert 123 versus 223"):
-        assert (1, 2, 3) == (2, 2, 3)
+        assert False, "Failure due to reason ONEONE"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
