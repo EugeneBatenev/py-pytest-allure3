@@ -35,7 +35,7 @@ def test_unit_always_passing_003():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason ONEONE"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
@@ -53,7 +53,7 @@ def test_unit_always_passing_005():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason ONEONE"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
@@ -71,7 +71,7 @@ def test_unit_always_passing_007():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason ONEONE"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
@@ -89,7 +89,7 @@ def test_unit_always_passing_009():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason ONEONE"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
@@ -197,7 +197,7 @@ def test_unit_always_passing_021():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason ONEONE"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
@@ -215,7 +215,7 @@ def test_unit_always_passing_023():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason ONEONE"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
@@ -287,7 +287,7 @@ def test_unit_always_passing_031():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason TWOTWO"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
@@ -305,7 +305,7 @@ def test_unit_always_passing_033():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason TWOTWO"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
@@ -323,7 +323,7 @@ def test_unit_always_passing_035():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason TWOTWO"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
@@ -341,7 +341,7 @@ def test_unit_always_passing_037():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason TWOTWO"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
@@ -359,7 +359,7 @@ def test_unit_always_passing_039():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason TWOTWO"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
@@ -467,7 +467,7 @@ def test_unit_always_passing_051():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
     with allure.step("Assert 123 versus 123"):
-        assert (1, 2, 3) == (1, 2, 3)
+        assert False, "Failure due to reason TWOTWO"
 
 @allure.feature("test results processing")
 @allure.story("many unit tests")
