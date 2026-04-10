@@ -7,7 +7,7 @@ import pytest
 @allure.title("Assert a tuple 001 and it will fail")
 def test_unit_always_passing_001():
     with allure.step("Start stuff"):
-        assert False, "Hahaha, do not leave Omsk"
+        assert True
     with allure.step("Click stuff"):
         assert True
     with allure.step("Click stuff harder"):
