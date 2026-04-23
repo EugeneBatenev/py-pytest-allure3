@@ -41,11 +41,13 @@ jobs:
           allure-endpoint: ${{ secrets.ALLURE_ENDPOINT }}
           allure-token: ${{ secrets.ALLURE_TOKEN }}
           allure-project-id: 14865
+          
       - name: Run pytest tests
         run: | 
           printenv | grep "ALLURE\|GITHUB" > env.list
           echo "Now, printing what we have in env.list"
           cat env.list
+          allurectl watch -- pytest --alluredir=${{ env.ALLURE_RESULTS }} --clean-alluredir
         env:
           TEST_ENDPOINT: ${{ github.event.inputs.TEST_ENDPOINT }}
           TEST_BROWSER: ${{ github.event.inputs.TEST_BROWSER }}
