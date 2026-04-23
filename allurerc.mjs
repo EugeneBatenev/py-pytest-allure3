@@ -1,4 +1,14 @@
 import { defaultChartsConfig, defineConfig } from "allure";
+import { expect, it } from "vitest";
+import { globalAttachment, step } from "allure-js-commons";
+
+it("should create global attachment", async () => {
+  await globalAttachment("global-1.txt", new Buffer("global content 1"), "text/plain");
+
+  await step("attaching global attachment", async () => {
+    await globalAttachment("global-2.txt", new Buffer("global content 2"), "text/plain");
+  });
+});
 
 const comboRules = [
   {
